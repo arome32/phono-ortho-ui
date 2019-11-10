@@ -1,0 +1,13 @@
+.intro-container {
+    width: 78%;
+    color: white;
+    margin: auto;
+    padding-bottom: 10%;
+}
+
+.text-container {
+    padding-bottom: 34%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}

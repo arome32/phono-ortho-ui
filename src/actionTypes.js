@@ -1,0 +1,6 @@
+module.exports = {
+    CREATE_USER: 'CREATE_USER',
+    PUSH_WORD: 'PUSH_WORD',
+    UPDATE_DEV_MODE: 'UPDATE_DEV_MODE',
+
+}
