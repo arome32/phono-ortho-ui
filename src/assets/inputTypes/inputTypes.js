@@ -40,9 +40,8 @@ export const WhiteTextField  = withStyles({
 
 export const WhiteCheckBox  = withStyles({
   root: {
-    color: 'white',
-    '&$checked': {
-      color: 'white',
-    },
+    primary: {
+      main: '#fff',
+      }
   },
 })(Checkbox);

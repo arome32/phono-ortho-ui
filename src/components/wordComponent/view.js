@@ -77,13 +77,15 @@ class WordComponent extends React.Component {
                         onChange={this.handleNameChange.bind(this)} onKeyPress={this.handleEnter.bind(this)}/>
                 </div>
                 
-                <ThemeProvider theme={defaultTheme}>
-                    <Button variant="contained" color="primary"
-                    size='large' disabled={!isDisabled}
-                    onClick={this.handleButtonClick.bind(this)}>
-                        Continue
-                    </Button>
-                </ThemeProvider>
+                <div className='word-button-container'>
+                    <ThemeProvider theme={defaultTheme}>
+                        <Button variant="contained" color="primary"
+                        size='large' disabled={!isDisabled}
+                        onClick={this.handleButtonClick.bind(this)}>
+                            Continue
+                        </Button>
+                    </ThemeProvider>
+                </div>
             </div>
         );
     }

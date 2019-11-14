@@ -23,5 +23,12 @@
   }
   
   .name-input-container {
+    padding-top: 1%;
     padding-bottom: 5%;
   }
+
+  .word-button-container {
+    display: flex;
+    justify-content: center;
+  }
+  

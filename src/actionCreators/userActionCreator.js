@@ -5,7 +5,6 @@ import { Word } from "../models/word";
 export const createUser = name => (dispatch) => {
     const user = new User(name);
     dispatch({type: actionTypes.CREATE_USER, user})
-    dispatch({type: actionTypes.SEND_NAME, name})
 }
 
 export const pushWord = (word, spelling) => (dispatch) => {

@@ -1,7 +1,6 @@
 import React from 'react';
 import {withRouter} from 'react-router';
 import logo from '../../assets/images/logo.svg'
-// import { WhiteTextField, WhiteCheckBox } from '../../assets/inputTypes/inputTypes'
 import { WhiteTextField } from '../../assets/inputTypes/inputTypes'
 import Button from '@material-ui/core/Button';
 // import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -67,16 +66,6 @@ class LandingPage extends React.Component {
                             fullWidth label="Name" variant="outlined" 
                             autoComplete='off'
                             onChange={this.handleNameChange.bind(this)} onKeyPress={this.handleEnter.bind(this)}/>
-                             {/* <FormControlLabel
-                             control={
-                                <WhiteCheckBox checked={this.state.devMode} 
-                                onChange={this.handleChange.bind(this)}
-                                value='Dev Mode'
-                                color="white"
-                                />
-                            }
-                            label="Dev Mode"
-                            /> */}
                     </div>
                 
                     <ThemeProvider theme={defaultTheme}>
