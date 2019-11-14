@@ -1,9 +1,10 @@
 import React from 'react';
 import {withRouter} from 'react-router';
 import logo from '../../assets/images/logo.svg'
-import { WhiteTextField, WhiteCheckBox } from '../../assets/inputTypes/inputTypes'
+// import { WhiteTextField, WhiteCheckBox } from '../../assets/inputTypes/inputTypes'
+import { WhiteTextField } from '../../assets/inputTypes/inputTypes'
 import Button from '@material-ui/core/Button';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { ThemeProvider } from '@material-ui/styles';
 import '../../assets/css/app.css'
 import { defaultTheme } from "../../assets/inputTypes/themes.js";
