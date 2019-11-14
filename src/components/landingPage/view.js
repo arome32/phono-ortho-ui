@@ -15,6 +15,10 @@ class LandingPage extends React.Component {
         this.state = { name: ''};
     }
 
+    componentDidMount() {
+        this.props.wakeupServer();
+    }
+
     handleNameChange(event) {
         this.setState({ name: event.target.value });
     };

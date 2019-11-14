@@ -2,7 +2,12 @@ import React from 'react';
 import {withRouter} from 'react-router';
 import '../../assets/css/app.css'
 
-class FinalPage extends React.Component {;
+class FinalPage extends React.Component {
+    componentDidMount(){
+        const {postUser} = this.props;
+        postUser();
+    }
+
     render() {
         return (
             <div className="App">

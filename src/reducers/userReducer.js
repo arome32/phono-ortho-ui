@@ -1,5 +1,6 @@
  import initalState from '../initalState'
  import actionTypes from '../actionTypes'
+ import axios from 'axios';
 
  export const userReducer = (state = initalState.user, action) => {
      switch (action.type) {
@@ -11,7 +12,24 @@
             state.pushWord(action.word)
             return state;
          }
-         
+         case actionTypes.SEND_NAME: {
+            axios.get(`https://phono-ortho-spelling-backend.herokuapp.com/${action.name}`, {
+               headers: {"Access-Control-Allow-Origin": "*"}, responseType: 'json',})
+               .then(res => {
+                  console.log(res);
+                  console.log(res.data);
+             });
+            
+            return state
+         }
+         case actionTypes.POST_USER: {
+            axios.post(`https://phono-ortho-spelling-backend.herokuapp.com/user`,  state)
+            .then(res => {
+              console.log(res);
+              console.log(res.data);
+            })
+            return state
+         }
          default:
             return state
      }
