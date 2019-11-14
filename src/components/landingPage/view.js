@@ -66,7 +66,7 @@ class LandingPage extends React.Component {
                             fullWidth label="Name" variant="outlined" 
                             autoComplete='off'
                             onChange={this.handleNameChange.bind(this)} onKeyPress={this.handleEnter.bind(this)}/>
-                             <FormControlLabel
+                             {/* <FormControlLabel
                              control={
                                 <WhiteCheckBox checked={this.state.devMode} 
                                 onChange={this.handleChange.bind(this)}
@@ -75,7 +75,7 @@ class LandingPage extends React.Component {
                                 />
                             }
                             label="Dev Mode"
-                            />
+                            /> */}
                     </div>
                 
                     <ThemeProvider theme={defaultTheme}>
