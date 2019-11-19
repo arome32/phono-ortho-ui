@@ -58,7 +58,7 @@ class LandingPage extends React.Component {
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <p className='inputs'>
-                    Welcome to the Science Spelling Training.<br/><br/>
+                    Welcome to the Science Spelling Pretest.<br/><br/>
                      Please enter your name:
                     </p>
                     <div className='name-input-container'>
