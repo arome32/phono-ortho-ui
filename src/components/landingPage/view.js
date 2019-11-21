@@ -1,6 +1,6 @@
 import React from 'react';
 import {withRouter} from 'react-router';
-import logo from '../../assets/images/logo.svg'
+import logo from '../../assets/images/ts-logo.svg'
 import { WhiteTextField } from '../../assets/inputTypes/inputTypes'
 import Button from '@material-ui/core/Button';
 // import FormControlLabel from '@material-ui/core/FormControlLabel';
