@@ -1,6 +1,6 @@
 import React from 'react';
 import {withRouter} from 'react-router';
-import logo from '../../assets/images/ts-logo.svg'
+import ts_logo from '../../assets/images/logo.svg'
 import { WhiteTextField } from '../../assets/inputTypes/inputTypes'
 import Button from '@material-ui/core/Button';
 // import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -56,7 +56,7 @@ class LandingPage extends React.Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src={ts_logo} className="App-logo" alt="logo" />
                     <p className='inputs'>
                     Welcome to the Talker Study.<br/><br/>
                      Please enter your name:
